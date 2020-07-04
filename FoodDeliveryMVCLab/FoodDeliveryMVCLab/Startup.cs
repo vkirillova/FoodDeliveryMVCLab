@@ -1,14 +1,11 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using AutoMapper;
+using FoodDeliveryMVCLab.DAL.DbContext;
+using FoodDeliveryMVCLab.DAL.Entities;
+using FoodDeliveryMVCLab.DAL.EntityConfigurations;
+using FoodDeliveryMVCLab.DAL.EntityConfigurations.Contracts;
 using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Identity.UI;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.EntityFrameworkCore;
-using FoodDeliveryMVCLab.Data;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -27,13 +24,38 @@ namespace FoodDeliveryMVCLab
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            string connectionString = Configuration.GetConnectionString("MainConnectionString");
+
+            var optionsBuilder = new DbContextOptionsBuilder();
+            optionsBuilder.UseSqlServer(connectionString);
+
+            services.AddScoped<IEntityConfigurationsContainer>(sp => new EntityConfigurationsContainer());
+
             services.AddDbContext<ApplicationDbContext>(options =>
-                options.UseSqlServer(
-                    Configuration.GetConnectionString("DefaultConnection")));
-            services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
+            {
+                options.UseSqlServer(connectionString);
+            });
+
+            services.AddSingleton<IApplicationDbContextFactory>(
+                sp => new ApplicationDbContextFactory(
+                    optionsBuilder.Options,
+                    new EntityConfigurationsContainer()
+                ));
+
+            services.AddSingleton<IUnitOfWorkFactory, UnitOfWorkFactory>();
+            //services.AddSingleton<IDishService, DishService>();
+            //services.AddSingleton<IRestaurantService, RestaurantService>();
+            //services.AddSingleton<IOrderService, OrderService>();
+
+            //services.AddScoped<IShoppingCartService, ShoppingCartService>();
+
+            services.AddDefaultIdentity<User>(options => options.SignIn.RequireConfirmedAccount = false)
                 .AddEntityFrameworkStores<ApplicationDbContext>();
+
             services.AddControllersWithViews();
             services.AddRazorPages();
+
+            Mapper.Initialize(config => config.AddProfile(new MappingProfile()));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -54,7 +76,6 @@ namespace FoodDeliveryMVCLab
             app.UseStaticFiles();
 
             app.UseRouting();
-
             app.UseAuthentication();
             app.UseAuthorization();
 
