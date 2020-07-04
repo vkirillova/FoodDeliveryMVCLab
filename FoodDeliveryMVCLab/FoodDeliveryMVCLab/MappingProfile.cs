@@ -1,4 +1,9 @@
 ﻿using AutoMapper;
+using FoodDeliveryMVCLab.DAL.Entities;
+using FoodDeliveryMVCLab.Models.Dishes;
+using FoodDeliveryMVCLab.Models.Orders;
+using FoodDeliveryMVCLab.Models.Restaurants;
+using FoodDeliveryMVCLab.Models.ShoppingCart;
 
 namespace FoodDeliveryMVCLab
 {
@@ -6,11 +11,12 @@ namespace FoodDeliveryMVCLab
     {
         public MappingProfile()
         {
-            //CreateUniversalMap<Restaurant, RestaurantViewModel>();
-            //CreateUniversalMap<Dish, DishViewModel>();
-            //CreateUniversalMap<Dish, DishRestModel>();
-            //CreateUniversalMap<Dish, ShoppingCartViewModel>();
-            //CreateUniversalMap<DishViewModel, ShoppingCartViewModel>();
+            CreateUniversalMap<Restaurant, RestaurantViewModel>();
+            CreateUniversalMap<Dish, DishViewModel>();
+            CreateUniversalMap<Dish, DishRestModel>();
+            CreateUniversalMap<Dish, ShoppingCartViewModel>();
+            CreateUniversalMap<DishViewModel, ShoppingCartViewModel>();
+            CreateUniversalMap<Dish, OrderViewModel>();
         }
 
         private void CreateUniversalMap<From, To>()

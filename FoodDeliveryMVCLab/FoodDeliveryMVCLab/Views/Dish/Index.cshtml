@@ -1,0 +1,36 @@
+﻿@model List<FoodDeliveryMVCLab.Models.Dishes.DishRestModel>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Restaurant</h1>
+<table class="table">
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    <img src="@Html.DisplayFor(modelItem => item.ImageUrl)" width="150" height="150" />
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Price)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Description)
+                </td>
+                <td>
+
+                    <form asp-action="Add" asp-controller="ShoppingCart" method="post">
+                        <input type="hidden" name="dishId" value="@item.Id" />
+                        <input type="submit"  value="Add to cart" />
+                    </form>
+
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
