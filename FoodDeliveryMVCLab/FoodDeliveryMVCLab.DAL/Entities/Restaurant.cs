@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace ClassLibrary.DAL.Entities
+namespace FoodDeliveryMVCLab.DAL.Entities
 {
     public class Restaurant: IEntity
     {

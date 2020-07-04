@@ -1,11 +1,11 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using ClassLibrary.DAL.DbContext;
-using ClassLibrary.DAL.Entities;
-using ClassLibrary.DAL.Repositories.Contracts;
+using FoodDeliveryMVCLab.DAL.DbContext;
+using FoodDeliveryMVCLab.DAL.Entities;
+using FoodDeliveryMVCLab.DAL.Repositories.Contracts;
 using Microsoft.EntityFrameworkCore;
 
-namespace ClassLibrary.DAL.Repositories
+namespace FoodDeliveryMVCLab.DAL.Repositories
 {
     public class DishRepository : Repository<Dish>, IDishRepository
     {

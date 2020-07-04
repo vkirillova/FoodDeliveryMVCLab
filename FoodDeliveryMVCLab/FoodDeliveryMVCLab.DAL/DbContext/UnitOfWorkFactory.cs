@@ -1,4 +1,4 @@
-﻿namespace ClassLibrary.DAL.DbContext
+﻿namespace FoodDeliveryMVCLab.DAL.DbContext
 {
     public interface IUnitOfWorkFactory
     {

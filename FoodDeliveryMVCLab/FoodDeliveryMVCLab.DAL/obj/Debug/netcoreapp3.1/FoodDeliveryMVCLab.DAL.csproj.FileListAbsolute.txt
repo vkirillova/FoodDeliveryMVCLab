@@ -1,0 +1,5 @@
+C:\Users\Asterion\Documents\Courses\C#\homework_git\FoodDeliveryMVCLab\FoodDeliveryMVCLab\FoodDeliveryMVCLab.DAL\bin\Debug\netcoreapp3.1\FoodDeliveryMVCLab.DAL.deps.json
+C:\Users\Asterion\Documents\Courses\C#\homework_git\FoodDeliveryMVCLab\FoodDeliveryMVCLab\FoodDeliveryMVCLab.DAL\bin\Debug\netcoreapp3.1\FoodDeliveryMVCLab.DAL.dll
+C:\Users\Asterion\Documents\Courses\C#\homework_git\FoodDeliveryMVCLab\FoodDeliveryMVCLab\FoodDeliveryMVCLab.DAL\obj\Debug\netcoreapp3.1\FoodDeliveryMVCLab.DAL.csprojAssemblyReference.cache
+C:\Users\Asterion\Documents\Courses\C#\homework_git\FoodDeliveryMVCLab\FoodDeliveryMVCLab\FoodDeliveryMVCLab.DAL\obj\Debug\netcoreapp3.1\FoodDeliveryMVCLab.DAL.AssemblyInfoInputs.cache
+C:\Users\Asterion\Documents\Courses\C#\homework_git\FoodDeliveryMVCLab\FoodDeliveryMVCLab\FoodDeliveryMVCLab.DAL\obj\Debug\netcoreapp3.1\FoodDeliveryMVCLab.DAL.AssemblyInfo.cs

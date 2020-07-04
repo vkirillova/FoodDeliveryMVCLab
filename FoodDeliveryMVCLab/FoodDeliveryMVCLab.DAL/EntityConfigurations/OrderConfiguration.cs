@@ -1,7 +1,7 @@
-﻿using ClassLibrary.DAL.Entities;
+﻿using FoodDeliveryMVCLab.DAL.Entities;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace ClassLibrary.DAL.EntityConfigurations
+namespace FoodDeliveryMVCLab.DAL.EntityConfigurations
 {
     public class OrderConfiguration : BaseEntityConfiguration<Order>
     {

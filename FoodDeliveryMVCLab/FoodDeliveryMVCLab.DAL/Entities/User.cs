@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity;
 
-namespace ClassLibrary.DAL.Entities
+namespace FoodDeliveryMVCLab.DAL.Entities
 {
     public class User: IdentityUser<int>, IEntity
     {

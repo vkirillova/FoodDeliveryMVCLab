@@ -1,8 +1,8 @@
 ﻿using System;
-using ClassLibrary.DAL.Repositories;
-using ClassLibrary.DAL.Repositories.Contracts;
+using FoodDeliveryMVCLab.DAL.Repositories;
+using FoodDeliveryMVCLab.DAL.Repositories.Contracts;
 
-namespace ClassLibrary.DAL.DbContext
+namespace FoodDeliveryMVCLab.DAL.DbContext
 {
     public class UnitOfWork : IDisposable
     {

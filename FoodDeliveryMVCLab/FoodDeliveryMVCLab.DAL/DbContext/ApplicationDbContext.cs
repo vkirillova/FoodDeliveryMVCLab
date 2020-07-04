@@ -1,9 +1,9 @@
-﻿using ClassLibrary.DAL.Entities;
-using ClassLibrary.DAL.EntityConfigurations.Contracts;
+﻿using FoodDeliveryMVCLab.DAL.Entities;
+using FoodDeliveryMVCLab.DAL.EntityConfigurations.Contracts;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
-namespace ClassLibrary.DAL.DbContext
+namespace FoodDeliveryMVCLab.DAL.DbContext
 {
     public class ApplicationDbContext : IdentityDbContext<User, Role, int>
     {

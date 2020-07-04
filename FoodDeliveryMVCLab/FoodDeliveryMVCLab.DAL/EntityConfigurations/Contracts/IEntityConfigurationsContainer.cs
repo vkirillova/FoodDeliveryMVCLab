@@ -1,7 +1,6 @@
-﻿
-using ClassLibrary.DAL.Entities;
+﻿using FoodDeliveryMVCLab.DAL.Entities;
 
-namespace ClassLibrary.DAL.EntityConfigurations.Contracts
+namespace FoodDeliveryMVCLab.DAL.EntityConfigurations.Contracts
 {
     public interface IEntityConfigurationsContainer
     {

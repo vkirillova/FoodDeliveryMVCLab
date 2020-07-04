@@ -1,6 +1,6 @@
-﻿using ClassLibrary.DAL.Entities;
+﻿using FoodDeliveryMVCLab.DAL.Entities;
 
-namespace ClassLibrary.DAL.Repositories.Contracts
+namespace FoodDeliveryMVCLab.DAL.Repositories.Contracts
 {
     public interface IOrderRepository : IRepository<Order>
     {

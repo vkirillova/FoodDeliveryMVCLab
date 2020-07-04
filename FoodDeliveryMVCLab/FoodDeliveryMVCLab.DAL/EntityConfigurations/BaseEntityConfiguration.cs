@@ -1,9 +1,9 @@
 ﻿using System;
-using ClassLibrary.DAL.Entities;
-using ClassLibrary.DAL.EntityConfigurations.Contracts;
+using FoodDeliveryMVCLab.DAL.Entities;
+using FoodDeliveryMVCLab.DAL.EntityConfigurations.Contracts;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace ClassLibrary.DAL.EntityConfigurations
+namespace FoodDeliveryMVCLab.DAL.EntityConfigurations
 {
     public abstract class BaseEntityConfiguration<T> : IEntityConfiguration<T> where T : class, IEntity
     {

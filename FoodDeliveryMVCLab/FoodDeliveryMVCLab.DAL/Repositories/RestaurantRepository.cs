@@ -1,8 +1,8 @@
-﻿using ClassLibrary.DAL.DbContext;
-using ClassLibrary.DAL.Entities;
-using ClassLibrary.DAL.Repositories.Contracts;
+﻿using FoodDeliveryMVCLab.DAL.DbContext;
+using FoodDeliveryMVCLab.DAL.Entities;
+using FoodDeliveryMVCLab.DAL.Repositories.Contracts;
 
-namespace ClassLibrary.DAL.Repositories
+namespace FoodDeliveryMVCLab.DAL.Repositories
 {
     public class RestaurantRepository : Repository<Restaurant>, IRestaurantRepository
     {
@@ -10,6 +10,5 @@ namespace ClassLibrary.DAL.Repositories
         {
             entities = context.Restaurants;
         }
-
     }
 }

@@ -1,8 +1,8 @@
 ﻿using System;
-using ClassLibrary.DAL.EntityConfigurations.Contracts;
+using FoodDeliveryMVCLab.DAL.EntityConfigurations.Contracts;
 using Microsoft.EntityFrameworkCore;
 
-namespace ClassLibrary.DAL.DbContext
+namespace FoodDeliveryMVCLab.DAL.DbContext
 {
     public interface IApplicationDbContextFactory
     {

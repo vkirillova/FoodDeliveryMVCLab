@@ -1,11 +1,11 @@
-﻿using ClassLibrary.DAL.Repositories.Contracts;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using ClassLibrary.DAL.DbContext;
-using ClassLibrary.DAL.Entities;
+using FoodDeliveryMVCLab.DAL.DbContext;
+using FoodDeliveryMVCLab.DAL.Entities;
+using FoodDeliveryMVCLab.DAL.Repositories.Contracts;
 using Microsoft.EntityFrameworkCore;
 
-namespace ClassLibrary.DAL.Repositories
+namespace FoodDeliveryMVCLab.DAL.Repositories
 {
     public class Repository<T> : IRepository<T> where T : class, IEntity
     {

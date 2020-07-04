@@ -1,4 +1,4 @@
-﻿namespace ClassLibrary.DAL.Entities
+﻿namespace FoodDeliveryMVCLab.DAL.Entities
 {
     public class Dish : IEntity
     {

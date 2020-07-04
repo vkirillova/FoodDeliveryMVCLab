@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace ClassLibrary.DAL.Entities
+namespace FoodDeliveryMVCLab.DAL.Entities
 {
     public class Order: IEntity
     {
