@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Asterion\\Documents\\Courses\\C#\\homework\\homework-lab-26-65\\FoodDeliveryMVCLab\\FoodDeliveryMVCLab\\FoodDeliveryMVCLab.csproj": {}
+    "C:\\Users\\Asterion\\Documents\\Courses\\C#\\homework_git\\FoodDeliveryMVCLab\\FoodDeliveryMVCLab\\FoodDeliveryMVCLab\\FoodDeliveryMVCLab.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Asterion\\Documents\\Courses\\C#\\homework\\homework-lab-26-65\\FoodDeliveryMVCLab\\FoodDeliveryMVCLab\\FoodDeliveryMVCLab.csproj": {
+    "C:\\Users\\Asterion\\Documents\\Courses\\C#\\homework_git\\FoodDeliveryMVCLab\\FoodDeliveryMVCLab\\FoodDeliveryMVCLab\\FoodDeliveryMVCLab.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Asterion\\Documents\\Courses\\C#\\homework\\homework-lab-26-65\\FoodDeliveryMVCLab\\FoodDeliveryMVCLab\\FoodDeliveryMVCLab.csproj",
+        "projectUniqueName": "C:\\Users\\Asterion\\Documents\\Courses\\C#\\homework_git\\FoodDeliveryMVCLab\\FoodDeliveryMVCLab\\FoodDeliveryMVCLab\\FoodDeliveryMVCLab.csproj",
         "projectName": "FoodDeliveryMVCLab",
-        "projectPath": "C:\\Users\\Asterion\\Documents\\Courses\\C#\\homework\\homework-lab-26-65\\FoodDeliveryMVCLab\\FoodDeliveryMVCLab\\FoodDeliveryMVCLab.csproj",
+        "projectPath": "C:\\Users\\Asterion\\Documents\\Courses\\C#\\homework_git\\FoodDeliveryMVCLab\\FoodDeliveryMVCLab\\FoodDeliveryMVCLab\\FoodDeliveryMVCLab.csproj",
         "packagesPath": "C:\\Users\\Asterion\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Asterion\\Documents\\Courses\\C#\\homework\\homework-lab-26-65\\FoodDeliveryMVCLab\\FoodDeliveryMVCLab\\obj\\",
+        "outputPath": "C:\\Users\\Asterion\\Documents\\Courses\\C#\\homework_git\\FoodDeliveryMVCLab\\FoodDeliveryMVCLab\\FoodDeliveryMVCLab\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
